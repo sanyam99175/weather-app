@@ -1,4 +1,5 @@
 import { Oval } from 'react-loader-spinner'; 
+import { useMediaQuery } from 'react-responsive'
 import React, { useState, useEffect } from 'react'; 
 import axios from 'axios'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
@@ -6,6 +7,7 @@ import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './Weather.css'; 
   
 function WeatherApp() { 
+    useMediaQuery({ query: '(orientation: portrait)' })
     const [city, setCity] = useState(''); 
     const [weather, setWeather] = useState({ 
         loading: false, 
