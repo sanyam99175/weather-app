@@ -1,3 +1,21 @@
+@media only screen and (min-width: 900px)
+{
+  .MyApp { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 750px; 
+    min-height: 500px; 
+    background-color: rgb(212, 224, 223); 
+    text-align: center; 
+    margin: 120px auto; 
+    border-radius: 10px; 
+    padding-bottom: 30px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  } 
+}
+
 * { 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
@@ -10,8 +28,8 @@ html {
 .error_msg{
  margin-left: 8px;
 }
-.my-
-app-name { 
+
+.my-app-name { 
   font-size: 2.3rem; 
   color: rgb(0, 130, 144); 
   margin-bottom: 16px; 
@@ -25,20 +43,6 @@ app-name {
   background-position: 10px 12px;
 }
 
-.MyApp { 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
-  width: 750px; 
-  min-height: 500px; 
-  background-color: rgb(212, 224, 223); 
-  text-align: center; 
-  margin: 120px auto; 
-  border-radius: 10px; 
-  padding-bottom: 30px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-} 
 .search-bar{
   display: flex;
   flex-direction: row;
@@ -124,4 +128,60 @@ app-name {
   height: 100px; 
   border-radius: 50%; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@media only screen and (max-width: 600px)
+{
+
+.MyApp { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 350px; 
+  min-height: 500px; 
+  background-color: rgb(212, 224, 223); 
+  text-align: center; 
+  margin: 170px auto; 
+  border-radius: 10px; 
+  padding-bottom: 30px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+}
+@media only screen and (min-width: 992px) and (max-device-width : 1024px) 
+{
+
+.MyApp { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 500px; 
+  min-height: 500px; 
+  background-color: rgb(212, 224, 223); 
+  text-align: center; 
+  margin: 170px auto; 
+  border-radius: 10px; 
+  padding-bottom: 30px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+}
+
+@media only screen and (min-width: 768px)
+{
+
+.MyApp { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 500px; 
+  min-height: 500px; 
+  background-color: rgb(212, 224, 223); 
+  text-align: center; 
+  margin: 170px auto; 
+  border-radius: 10px; 
+  padding-bottom: 30px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
 }

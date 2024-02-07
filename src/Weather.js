@@ -7,7 +7,6 @@ import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './Weather.css'; 
   
 function WeatherApp() { 
-    useMediaQuery({ query: '(orientation: portrait)' })
     const [city, setCity] = useState(''); 
     const [weather, setWeather] = useState({ 
         loading: false, 
