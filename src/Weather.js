@@ -1,5 +1,4 @@
 import { Oval } from 'react-loader-spinner'; 
-import { useMediaQuery } from 'react-responsive'
 import React, { useState, } from 'react'; 
 import axios from 'axios'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
