@@ -1,6 +1,6 @@
 import { Oval } from 'react-loader-spinner'; 
 import { useMediaQuery } from 'react-responsive'
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, } from 'react'; 
 import axios from 'axios'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faFrown } from '@fortawesome/free-solid-svg-icons'; 
@@ -46,7 +46,7 @@ function WeatherApp() {
     }; 
 
     function validate(){
-      if (city.length == 0) {
+      if (city.length === 0) {
         localStorage.removeItem("weather")
         localStorage.removeItem("city")
         setError("Please enter city")
@@ -80,7 +80,7 @@ function WeatherApp() {
             .catch((error) => { 
                 localStorage.removeItem("weather")
                 localStorage.removeItem("city")
-                if(error.response.status == 404){
+                if(error.response.status === 404){
                   setError("City not found")
                 }
                 else{
